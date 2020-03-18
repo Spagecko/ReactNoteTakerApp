@@ -3,6 +3,9 @@ import React from 'react';
 const  userOutput = (props) =>
 {
 
+    const today = new Date();
+
+    const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
     const style1 = {
 
@@ -42,6 +45,8 @@ const  userOutput = (props) =>
     return(
 
         <div style ={style1}> 
+        <p>task created on</p> 
+        <p>{date}</p>
         <div style = {style2}>
           
             
